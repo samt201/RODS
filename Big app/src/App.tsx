@@ -16,7 +16,7 @@ let people: Person[] = [
   { name: "Jane", age: 25, isTeacher: false },
   { name: "Sam", age: 42, isTeacher: false },
 ];
-return colors.length;
+return <div>{people[2].name}</div>;
 }
 class Person {
   name!: string;
