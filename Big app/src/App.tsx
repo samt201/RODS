@@ -1,15 +1,15 @@
 function App() {
-let isTeacher : Boolean = false;
+let isTeacher : boolean = false;
  const name : string = "Ali";
  let age : number = 14;
 
 let colors:string[] = ["pink" , "orange" , "purple"];
 
-let student = new Person();
+let teacher = new Person();
 
-student.name = name;
-student.age = age;
-student.isTeacher = false;
+teacher.name = name;
+teacher.age = age;
+teacher.isTeacher = isTeacher;
 
 let people: Person[] = [
   { name: "Rob", age: 39, isTeacher: true },
