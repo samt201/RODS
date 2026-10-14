@@ -44,19 +44,31 @@ let sum: number = Add(2,5);
 
 
 return (
-   <div>
+   <form onSubmit={submitButtonOnClick}>
    <div>
     <label>Name: </label>
-    <input></input>
+    <input id="name" required></input>
   </div>
   <div>
-     <button>Submit</button>
+    <label>Age:</label>
+    <input type="number" id="age" min="0" max="120" required></input>
+  </div>
+    <div>
+     <button type="submit">Submit</button>
     </div>
-    </div>
+    </form>
   )
 }
 
-
+function submitButtonOnClick() {
+  let name = document.querySelector<HTMLInputElement>("#name")!;
+  let age = document.querySelector<HTMLInputElement>("#age")!;
+  if (name && age) {
+    
+   } {
+     alert("Name: " + name.value + " - Age: " + age.value);
+   }
+}
 
 class Person {
   name!: string;
